@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Admission Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="logosjs.png" height="100px" width="100px"></a>
+            <div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="schoolservice.html">SERVICES</a></li>
+                    <li><a href="index.html">LABORITIES</a></l>
+                    <li><a href="index.html">REVIEWS</a></li>     
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="applyform.html">ADMISSION</a></li>
+                </ul>
+           </div>
+        </nav>
+    </header>
+    <div class="container">
+        <u><h1>SSHOOL ADMISSION FORM</h1></u>
+        <form id="admissionForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min="5" max="18" placeholder="Enter your age Min 5 Max 18">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" placeholder="dd/mm/yyyy" value="" min="2004-01-01" max="2024-12-31">
+
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="">Select...</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Transgender">Transgender</option>
+            </select>            
+
+            <label for="grade">Grade Applying For:</label>
+            <select name="grade" id="grade">
+                <option value="">Select...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+
+            <label for="parentName">Parent/Guardian Name:</label>
+            <input type="text" id="parentName" name="parentName" placeholder="Enter your parent/guardian name">
+
+            <label for="contactEmail">Contact Email:</label>
+            <input type="email" id="contactEmail" name="contactEmail" placeholder="Enter your contact email">
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" placeholder="Enter your phone number">
+
+            <U><h2 align="center">THANK YOU</h2></U>
+
+            <button type="submit">Submit Application</button>
+        </form>
+        <div id="responseMessage"></div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
